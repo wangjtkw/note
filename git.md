@@ -51,3 +51,16 @@ git reset --hard <版本号> 可跳到指定版本号的版本
 可查看每个操作的日志
 
 ![git_reflog](C:\Users\TKW\Desktop\note\git_pic\git_reflog.png)
+
+## git remote add origin <SSH>
+
+关联远程库
+
+![git_remote](C:\Users\TKW\Desktop\note\git_pic\git_remote.png)
+
+## git push -u origin <分支名>
+
+将本地仓库的内容传到远程仓库
+
+![git_push](C:\Users\TKW\Desktop\note\git_pic\git_push.png)
+
