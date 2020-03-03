@@ -35,3 +35,19 @@
 显示当前文件与已commit文件的差异
 
 ![git_diff](C:\Users\TKW\Desktop\note\git_pic\git_diff.png)
+
+## git reset --hard HEAD^
+
+版本回退
+
+一个^代表回退一个版本，两个^则回退两次，以此类推
+
+可使用~<num> 来回退多个版本，例如git reset --hard HEAD~100
+
+git reset --hard <版本号> 可跳到指定版本号的版本
+
+## git reflog
+
+可查看每个操作的日志
+
+![git_reflog](C:\Users\TKW\Desktop\note\git_pic\git_reflog.png)
