@@ -84,5 +84,32 @@ class SuperMan {
 }
 ```
 
+## 注解的属性
 
+注解的属性也叫做成员变量，注解只有成员变量，没有方法。注解的成员变量在注解的定义中以“无形参的方法”形式来声明，其方法名定义了该成员变量的名字，其返回值定义了该成员变量的类型。
+
+```java
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Test{
+    int num();//括号，也是返回值
+    String name();
+}
+
+@Test(num = 2,name = "asdas")
+class Student{
+
+}
+```
+
+使用default完成默认值的配置
+
+```java
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Test{
+    int num() default 1;
+    String name() default "";
+}
+```
 
